@@ -1,0 +1,9 @@
+name: "helm-plugin"
+version: "0.1.0"
+usage: "A simple Helm plugin"
+description: |-
+  A basic Helm plugin implementation
+command: "$HELM_PLUGIN_DIR/bin/helm-plugin"
+hooks:
+  install: "cd $HELM_PLUGIN_DIR; scripts/install.sh"
+  update: "cd $HELM_PLUGIN_DIR; scripts/install.sh"
